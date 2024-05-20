@@ -1,0 +1,130 @@
+*{
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom:0%;
+  background-color: #092A6B;
+}
+#form_grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 90%;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#signup_img{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#sign_up_form{
+  background-color: white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+#sign_up_title{
+  background-color: inherit;
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 20px;
+}
+#title_image{
+  background-color: inherit;
+  font-size: 20px;
+  margin-left: 40%;
+  display: block;
+  padding-top: 3%
+}
+#form_questions{
+  background-color: inherit;
+  margin-left: 10%;
+  padding-top: 7%;
+}
+.form_question{
+  background-color: inherit;
+  padding-bottom: 5%;
+  font-weight: bold;
+  font-size: 20px
+}
+.form_answer{
+  background-color: inherit;
+}
+.next_button{
+  background-color: white;
+  display: block;
+  float: right;
+  margin-top: 20%;
+  margin-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: #120C7A;
+  color: white;
+  margin-left: 30%;
+  cursor: pointer;
+  border: none;
+}
+.next_button:hover{
+  background-color: rgba(255,255,255,0.4);
+  color: #120C7A;
+  border: 3px solid #120C7A;
+  border-radius: 7px;
+}
+input{
+  margin-bottom: 10%;
+  border: none;
+  padding-top: 7px;
+  width: 80%;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+input:focus{
+  outline: none
+}
+form{
+  background-color: inherit;
+}
+#gender{
+  display: block;
+  background-color: inherit;
+  margin-top: 10%;
+  border: none;
+  padding-top: 7px;
+  width: 80%;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+input[type="date"]{
+  background-color: inherit;
+  margin-top: 10%
+}
+#sign_up_button{
+  color: white;
+  padding-top: 15px;
+  padding-block: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(13,99,169,1) 100%);
+  border: none;
+  cursor: pointer
+}
+#confirmation{
+  background-color: inherit;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20%;
+  color: #32AB30
+}

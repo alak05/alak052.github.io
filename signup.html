@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>ikol</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./icon.jpeg">
+        <link rel="stylesheet" href="./style_signup.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Roboto'
+    }
+    </style>
+    </head>
+    <body>
+        <div id="form_grid">
+            <div id="img_grid">
+                <img id="signup_img" src="./signup.png" alt="Mom giving a present to daughter."/>
+            </div>
+        <div id="sign_up_form">
+            <img id="title_image" src="./ikol.png" alt="ikol" width="120" height="68"/>
+            <div id="sign_up_title">Create your account now</div>
+            <div id="form_questions">
+                <div class="form_question">Name</div>
+                <input class = "form_answer" type="text" placeholder="Enter your name">
+                <button class ="next_button" id="next_button_name" onclick="emailId()">Next</button>
+            </div>
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            
+            function emailId(){
+              $(".form_answer").empty();
+              $("#form_questions").empty();
+                $("#form_questions").append(`
+                <div class="form_question">Email Id</div>
+                <input class = "form_answer" type="email" placeholder="Enter your Email Id">
+                <button class ="next_button" id="next_button_phone" onclick="phoneNumber()">Next</button>
+                `);  
+            }
+    
+            function phoneNumber(){
+                $("#form_questions").empty();
+                $("#form_questions").append(`
+                <div class="form_question">Phone Number</div>
+                <input class = "form_answer" type="tel" placeholder="Enter your phone number">
+                <button class ="next_button" id="next_button_phone" onclick="gender()">Next</button>
+                `);
+            }
+            
+            function gender(){
+               $("#form_questions").empty();
+                $("#form_questions").append(`
+                <form>
+                <label class="form_question" for="gender">Gender</label>
+                <select name="gender" id="gender">
+                  <option class = "drop_down" value="select">Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+                </form>
+                <button class ="next_button" id="next_button_gender" onclick="dateOfBirth()">Next</button>
+                `); 
+            }
+            
+            function dateOfBirth(){
+               $("#form_questions").empty();
+                $("#form_questions").append(`
+                <form>
+                    <label class = "form_question" for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </form>
+                <button class ="next_button" id="next_button_gender_dob" onclick="usernamePassword()">Next</button>
+                `); 
+            }
+            
+            function usernamePassword(){
+                $("#form_questions").empty();
+                $("#form_questions").append(`
+                <div class="form_question">Username</div>
+                <input class = "form_answer" type="text" placeholder="Enter your username">
+                <div class="form_question">Password</div>
+                <input class = "form_answer" type="password" placeholder="******">
+                <button id="sign_up_button" onclick="accountCreated()">Create account</button>
+                `);
+            }
+            
+            
+            function accountCreated(){
+                $("#form_questions").empty();
+                $("#form_questions").append(`
+                <div id="confirmation">Your account has been created successfully!</div>
+                `);
+            }
+            
+        </script>
+    </body>
+</html>
